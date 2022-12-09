@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md") as readme_file:
     readme = readme_file.read()
@@ -7,7 +7,7 @@ with open("README.md") as readme_file:
 setup(
     name='assess-mozilla-aws-security-infrastructure',
     version='1.0',
-    packages=['assess_mozilla_aws_security_infrastructure'],
+    packages=find_packages(include=["assess_mozilla_aws_security_infrastructure"]),
     url='https://github.com/mozilla/assess-mozilla-aws-security-infrastructure',
     license='MPL-2.0',
     author='Gene Wood',
