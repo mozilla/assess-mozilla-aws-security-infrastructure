@@ -4,7 +4,7 @@ import boto3
 from boto3.dynamodb.conditions import Key
 from typing import List, Set, Tuple
 from datetime import datetime, timedelta, timezone
-from persistent_cache import cache
+from .persistent_cache import cache
 
 CLOUDTRAIL_BUCKET = 'mozilla-cloudtrail-logs'
 CLOUDTRAIL_SNS_TOPIC_ARN = "arn:aws:sns:us-west-2:088944123687:MozillaCloudTrailLogs"
